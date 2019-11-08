@@ -89,7 +89,7 @@ class Application(tk.Frame):
         # Delete items before update. So when you keep pressing it doesnt keep getting (show example by calling this twice)
         self.parts_list.delete(0, tk.END)
         # Loop through records
-        for row in db.view():
+        for row in db.fetch():
             # Insert into list
             self.parts_list.insert(tk.END, row)
 
