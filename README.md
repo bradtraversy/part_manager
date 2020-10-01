@@ -12,12 +12,12 @@ pipenv install
 python part_manager.py
 
 
-# Compile with Pyinstaller
+# Compiled with Pyinstaller
 
 # Windows
 pyinstaller --onefile --windowed part_manager.py
 
-# Mac
+# MacOS
 pyinstaller --onefile --add-binary='/System/Library/Frameworks/Tk.framework/Tk':'tk' --add-binary='/System/Library/Frameworks/Tcl.framework/Tcl':'tcl' part_manager.py
 ```
 
